@@ -29,4 +29,8 @@ class SharedPrefsManager {
   Future<void> setString(String key, String value) async {
     await _prefs.setString(key, value);
   }
+
+  Future<void> remove(String key) async {
+    await _prefs.remove(key);
+  }
 }

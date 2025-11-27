@@ -1,0 +1,42 @@
+{
+  "description": "Example API responses for BlendBerry SDK",
+  
+  "fetch_config_endpoint": "GET /configs/{env}?version={version}",
+  
+  "example_response_200": {
+    "appId": "my-flutter-app",
+    "env": "staging",
+    "version": "1.0.0",
+    "configs": {
+      "useDarkTheme": true,
+      "primaryColor": "#2196F3",
+      "apiEndpoint": "https://api.staging.example.com",
+      "featureFlags": {
+        "enableNewFeature": true,
+        "enableBetaFeature": false
+      },
+      "maxRetries": 3,
+      "timeout": 5000
+    },
+    "lastModDate": "2024-01-15T10:30:00.000Z"
+  },
+  
+  "lookup_endpoint": "GET /configs/lookup?env={env}&version={version}&syncIdentifier={id}",
+  
+  "lookup_responses": {
+    "up_to_date": "UP_TO_DATE",
+    "needs_update": "NEEDS_TO_UPDATE",
+    "not_found": "NOT_FOUND"
+  },
+  
+  "sync_identifier_format": "The sync identifier is constructed as: {version}-{lastModDate}",
+  "sync_identifier_example": "1.0.0-2024-01-15T10:30:00.000Z",
+  
+  "notes": [
+    "All dates must be in ISO 8601 format (UTC)",
+    "The 'configs' object can contain any key-value pairs",
+    "The 'version' parameter is optional and defaults to 'latest'",
+    "The lookup endpoint should compare the syncIdentifier with the remote config's identifier"
+  ]
+}
+

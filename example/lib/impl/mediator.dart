@@ -17,15 +17,6 @@ class RemoteConfigMediatorImpl {
     return _instance ??= _createMediator();
   }
 
-  /// Creates mediator using direct instantiation.
-  static RemoteConfigMediator _createMediatorDirect() {
-    return RemoteConfigMediator(
-      RemoteConfigServiceImpl("http://10.0.2.2:8080/configs"),
-      LocalConfigRepositoryImpl(),
-      logger: const ConsoleLogger(), // Enable logging for debugging
-    );
-  }
-
   /// Creates mediator using builder pattern (recommended).
   static RemoteConfigMediator _createMediator() {
     return RemoteConfigBuilder()

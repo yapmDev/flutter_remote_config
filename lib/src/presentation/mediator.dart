@@ -164,7 +164,7 @@ class RemoteConfigMediator implements RemoteConfigDispatcher {
         // Check if update is needed
         _logger.debug('Checking for updates with sync identifier: ${localMetadata.syncIdentifier}');
         final syncResult = _syncStrategy != null
-            ? await _syncStrategy!.checkForUpdates(
+            ? await _syncStrategy.checkForUpdates(
                 localMetadata,
                 _remoteService,
                 env,
