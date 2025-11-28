@@ -1,5 +1,9 @@
 # Flutter Remote Config
 
+[![pub package](https://img.shields.io/pub/v/flutter_remote_config.svg)](https://pub.dev/packages/flutter_remote_config)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Dart](https://img.shields.io/badge/Dart-3.6.1+-0175C2?logo=dart)](https://dart.dev)
+
 A **completely abstract and configurable** Flutter SDK for managing remote configurations. Works with **any backend** - you implement the interfaces to match your backend's API.
 
 ---
@@ -114,7 +118,7 @@ To use the latest development version from GitHub:
 dependencies:
   flutter_remote_config:
     git:
-      url: git://github.com/blendberry/flutter-remote-config.git
+      url: git://github.com/yapmDev/flutter_remote_config.git
       ref: main
 ```
 
@@ -478,13 +482,41 @@ final mediator = RemoteConfigBuilder()
 
 ## Contributing
 
-We welcome contributions! Please see our contributing guidelines.
+We welcome contributions! This project follows standard GitHub contribution practices.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### How to Contribute
+
+1. **Fork the repository** on GitHub
+2. **Create your feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Make your changes** and ensure tests pass
+4. **Commit your changes** (`git commit -m 'Add some amazing feature'`)
+5. **Push to the branch** (`git push origin feature/amazing-feature`)
+6. **Open a Pull Request** with a clear description of your changes
+
+### Development Setup
+
+```bash
+# Clone your fork
+git clone https://github.com/yapmDev/flutter_remote_config.git
+cd flutter_remote_config
+
+# Install dependencies
+flutter pub get
+
+# Run tests
+flutter test
+
+# Run example
+cd example
+flutter run
+```
+
+### Code Style
+
+- Follow Dart style guidelines
+- Write tests for new features
+- Update documentation as needed
+- Keep commits atomic and well-described
 
 ---
 
