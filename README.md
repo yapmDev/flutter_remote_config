@@ -97,16 +97,25 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  blendberry_flutter_sdk:
-    git:
-      url: git://github.com/blendberry/blendberry-flutter-sdk.git
-      ref: main
+  blendberry_flutter_sdk: ^1.0.0
 ```
 
 Then run:
 
 ```bash
 flutter pub get
+```
+
+### Development Version
+
+To use the latest development version from GitHub:
+
+```yaml
+dependencies:
+  blendberry_flutter_sdk:
+    git:
+      url: git://github.com/blendberry/blendberry-flutter-sdk.git
+      ref: main
 ```
 
 ---

@@ -1,7 +1,6 @@
 library;
 
 export 'src/data/config_data.dart';
-export 'src/data/environment.dart';
 export 'src/data/repository.dart';
 export 'src/data/model.dart';
 
