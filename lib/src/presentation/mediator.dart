@@ -116,7 +116,7 @@ class RemoteConfigMediator implements RemoteConfigDispatcher {
   /// Loads configuration using local-only mode.
   Future<void> _loadLocalOnly(String env, [String? version]) async {
     _logger.debug('Loading configuration in localOnly mode for env: $env');
-    
+
     if (!_localRepository.hasData()) {
       _logger.error('No local configuration found for env: $env');
       throw ConfigNotFoundException(env, version);
@@ -127,18 +127,19 @@ class RemoteConfigMediator implements RemoteConfigDispatcher {
       _logger.error('Local configuration data is empty');
       throw ConfigDataException('Local configuration data is empty');
     }
-    
+
     _logger.info('Configuration loaded from local cache');
   }
 
   /// Loads configuration using remote-only mode.
   Future<void> _loadRemoteOnly(String env, [String? version]) async {
     _logger.debug('Loading configuration in remoteOnly mode for env: $env');
-    
+
     _logger.info('Fetching configuration from remote service...');
     final configData = await _remoteService.fetchConfig(env, version);
     if (configData == null) {
-      _logger.error('Configuration not found for env: $env${version != null ? ", version: $version" : ""}');
+      _logger.error(
+          'Configuration not found for env: $env${version != null ? ", version: $version" : ""}');
       throw ConfigNotFoundException(env, version);
     }
 
@@ -156,13 +157,14 @@ class RemoteConfigMediator implements RemoteConfigDispatcher {
   /// Loads configuration using hybrid mode (check local, sync if needed).
   Future<void> _loadHybrid(String env, [String? version]) async {
     _logger.debug('Loading configuration in hybrid mode for env: $env');
-    
+
     if (_localRepository.hasData()) {
       _logger.debug('Local configuration found, checking for updates...');
       final localMetadata = _localRepository.getMetadata();
       if (localMetadata != null) {
         // Check if update is needed
-        _logger.debug('Checking for updates with sync identifier: ${localMetadata.syncIdentifier}');
+        _logger.debug(
+            'Checking for updates with sync identifier: ${localMetadata.syncIdentifier}');
         final syncResult = _syncStrategy != null
             ? await _syncStrategy.checkForUpdates(
                 localMetadata,
@@ -188,7 +190,8 @@ class RemoteConfigMediator implements RemoteConfigDispatcher {
           case SyncResult.notFound:
             // Remote doesn't have this config, but we have local
             // Use local as fallback
-            _logger.warning('Configuration not found on remote, using local cache as fallback');
+            _logger.warning(
+                'Configuration not found on remote, using local cache as fallback');
             _configs = _localRepository.getConfigs();
             return;
 
@@ -223,7 +226,8 @@ class RemoteConfigMediator implements RemoteConfigDispatcher {
         'Configuration not loaded. Call loadConfigs() first.',
       );
     }
-    _logger.debug('Dispatching configuration with mapper: ${mapper.runtimeType}');
+    _logger
+        .debug('Dispatching configuration with mapper: ${mapper.runtimeType}');
     return mapper.map(_configs!);
   }
 }

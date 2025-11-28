@@ -47,4 +47,3 @@ class MockRemoteConfigService implements RemoteConfigService {
     return _syncResult;
   }
 }
-

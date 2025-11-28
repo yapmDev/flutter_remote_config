@@ -81,11 +81,11 @@ class RemoteConfigModel implements ConfigData, Serializable {
   /// that can be used for sync checking.
   @override
   ConfigMetadata? extractMetadata() => RemoteConfigMetadata(
-    appId: appId,
-    env: env,
-    version: version,
-    lastModDate: lastModDate,
-  );
+        appId: appId,
+        env: env,
+        version: version,
+        lastModDate: lastModDate,
+      );
 }
 
 /// Represents the metadata portion of a remote configuration.
@@ -117,5 +117,6 @@ class RemoteConfigMetadata implements ConfigMetadata {
   /// This format allows the SDK to check if the configuration has changed
   /// by comparing this identifier with the remote one.
   @override
-  String get syncIdentifier => '$version-${lastModDate.toUtc().toIso8601String()}';
+  String get syncIdentifier =>
+      '$version-${lastModDate.toUtc().toIso8601String()}';
 }

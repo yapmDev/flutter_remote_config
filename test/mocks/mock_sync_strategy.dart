@@ -28,4 +28,3 @@ class MockSyncStrategy implements SyncStrategy {
     return _result;
   }
 }
-

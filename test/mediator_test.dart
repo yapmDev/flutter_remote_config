@@ -35,7 +35,8 @@ void main() {
         await mediator.loadConfigs('prod');
 
         // Assert
-        final config = mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
+        final config =
+            mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
         expect(config.value, 'local_value');
       });
 
@@ -62,12 +63,14 @@ void main() {
         await mediator.loadConfigs('prod');
 
         // Assert
-        final config = mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
+        final config =
+            mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
         expect(config.value, 'remote_value');
         expect(mockRepository.getConfigs()['test'], 'remote_value');
       });
 
-      test('should use local cache as fallback when sync check fails', () async {
+      test('should use local cache as fallback when sync check fails',
+          () async {
         // Arrange
         final localConfigs = {'test': 'local_value'};
         final localMetadata = MockConfigMetadata('sync-123');
@@ -85,7 +88,8 @@ void main() {
         await mediator.loadConfigs('prod');
 
         // Assert
-        final config = mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
+        final config =
+            mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
         expect(config.value, 'local_value');
       });
 
@@ -107,7 +111,8 @@ void main() {
         await mediator.loadConfigs('prod');
 
         // Assert
-        final config = mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
+        final config =
+            mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
         expect(config.value, 'remote_value');
       });
     });
@@ -133,11 +138,13 @@ void main() {
         await mediator.loadConfigs('prod');
 
         // Assert
-        final config = mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
+        final config =
+            mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
         expect(config.value, 'remote_value');
       });
 
-      test('should throw ConfigNotFoundException when remote returns null', () async {
+      test('should throw ConfigNotFoundException when remote returns null',
+          () async {
         // Arrange
         mockService.setConfigToReturn(null);
 
@@ -171,7 +178,8 @@ void main() {
         await mediator.loadConfigs('prod');
 
         // Assert
-        final config = mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
+        final config =
+            mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
         expect(config.value, 'local_value');
       });
 
@@ -194,7 +202,8 @@ void main() {
     });
 
     group('Dispatch', () {
-      test('should throw StateError when dispatch called before loadConfigs', () {
+      test('should throw StateError when dispatch called before loadConfigs',
+          () {
         // Arrange
         final mediator = RemoteConfigMediator(
           mockService,
@@ -223,7 +232,8 @@ void main() {
 
         // Act
         await mediator.loadConfigs('prod');
-        final config = mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
+        final config =
+            mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
 
         // Assert
         expect(config.value, 'dispatched_value');
@@ -257,10 +267,10 @@ void main() {
         await mediator.loadConfigs('prod');
 
         // Assert
-        final config = mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
+        final config =
+            mediator.dispatch<MockRemoteConfig>(MockRemoteConfigMapper());
         expect(config.value, 'remote_value');
       });
     });
   });
 }
-

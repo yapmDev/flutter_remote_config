@@ -62,4 +62,3 @@ class MockLocalConfigRepository implements LocalConfigRepository {
     _metadata = null;
   }
 }
-

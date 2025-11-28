@@ -14,4 +14,3 @@ class MockRemoteConfigMapper implements RemoteConfigMapper<MockRemoteConfig> {
     return MockRemoteConfig(map['test'] as String? ?? 'default');
   }
 }
-

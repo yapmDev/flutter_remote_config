@@ -29,9 +29,7 @@ void main() {
     test('should throw StateError when service is not provided', () {
       // Act & Assert
       expect(
-        () => RemoteConfigBuilder()
-            .withRepository(mockRepository)
-            .build(),
+        () => RemoteConfigBuilder().withRepository(mockRepository).build(),
         throwsA(isA<StateError>()),
       );
     });
@@ -39,9 +37,7 @@ void main() {
     test('should throw StateError when repository is not provided', () {
       // Act & Assert
       expect(
-        () => RemoteConfigBuilder()
-            .withService(mockService)
-            .build(),
+        () => RemoteConfigBuilder().withService(mockService).build(),
         throwsA(isA<StateError>()),
       );
     });
@@ -86,4 +82,3 @@ void main() {
     });
   });
 }
-

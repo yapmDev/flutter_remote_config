@@ -67,4 +67,3 @@ abstract interface class ConfigMetadata {
   /// The format is entirely up to your backend implementation.
   String get syncIdentifier;
 }
-

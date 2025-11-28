@@ -62,4 +62,3 @@ class ConfigDataException extends RemoteConfigException {
   /// Creates a [ConfigDataException] with the given [message] and optional [cause].
   ConfigDataException(super.message, [super.cause]);
 }
-

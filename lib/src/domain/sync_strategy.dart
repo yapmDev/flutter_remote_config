@@ -60,4 +60,3 @@ abstract interface class SyncStrategy {
     String? version,
   ]);
 }
-

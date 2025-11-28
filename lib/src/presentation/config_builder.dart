@@ -92,7 +92,8 @@ class RemoteConfigBuilder {
       );
     }
 
-    final logger = _logger ?? (_enableLogging ? const ConsoleLogger() : const NoOpLogger());
+    final logger = _logger ??
+        (_enableLogging ? const ConsoleLogger() : const NoOpLogger());
 
     return RemoteConfigMediator(
       _service!,
@@ -103,4 +104,3 @@ class RemoteConfigBuilder {
     );
   }
 }
-

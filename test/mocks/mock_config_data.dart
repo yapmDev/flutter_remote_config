@@ -23,4 +23,3 @@ class MockConfigMetadata implements ConfigMetadata {
   @override
   String get syncIdentifier => _syncIdentifier;
 }
-
