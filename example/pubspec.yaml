@@ -1,5 +1,5 @@
 name: example
-description: Example app for blendberry_flutter_sdk
+description: Example app for flutter_remote_config
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  blendberry_flutter_sdk:
+  flutter_remote_config:
     path: ../
   http: ^1.6.0
   shared_preferences: ^2.2.2

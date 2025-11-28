@@ -1,4 +1,4 @@
-# BlendBerry Flutter SDK
+# Flutter Remote Config
 
 A **completely abstract and configurable** Flutter SDK for managing remote configurations. Works with **any backend** - you implement the interfaces to match your backend's API.
 
@@ -6,7 +6,7 @@ A **completely abstract and configurable** Flutter SDK for managing remote confi
 
 ## Overview
 
-BlendBerry Flutter SDK is a flexible, backend-agnostic remote configuration system that allows mobile applications to fetch and update configurations dynamically from any backend service. The SDK provides a clean architecture with complete abstraction - you implement the interfaces to match your specific backend format.
+Flutter Remote Config is a flexible, backend-agnostic remote configuration system that allows mobile applications to fetch and update configurations dynamically from any backend service. The SDK provides a clean architecture with complete abstraction - you implement the interfaces to match your specific backend format.
 
 **Key Philosophy**: The SDK only orchestrates. You implement how it communicates with your backend.
 
@@ -97,7 +97,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  blendberry_flutter_sdk: ^1.0.0
+  flutter_remote_config: ^1.0.0
 ```
 
 Then run:
@@ -112,9 +112,9 @@ To use the latest development version from GitHub:
 
 ```yaml
 dependencies:
-  blendberry_flutter_sdk:
+  flutter_remote_config:
     git:
-      url: git://github.com/blendberry/blendberry-flutter-sdk.git
+      url: git://github.com/blendberry/flutter-remote-config.git
       ref: main
 ```
 

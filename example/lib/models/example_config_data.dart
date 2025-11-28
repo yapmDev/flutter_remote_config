@@ -1,4 +1,4 @@
-import 'package:blendberry_flutter_sdk/blendberry_flutter_sdk.dart';
+import 'package:flutter_remote_config/flutter_remote_config.dart';
 import 'example_config_metadata.dart';
 
 /// Example implementation of ConfigData.

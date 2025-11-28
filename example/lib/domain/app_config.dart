@@ -1,4 +1,4 @@
-import 'package:blendberry_flutter_sdk/blendberry_flutter_sdk.dart';
+import 'package:flutter_remote_config/flutter_remote_config.dart';
 
 /// Example domain entity representing application configuration.
 ///

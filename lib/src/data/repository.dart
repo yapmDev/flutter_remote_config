@@ -1,4 +1,4 @@
-import 'package:blendberry_flutter_sdk/src/data/config_data.dart';
+import 'package:flutter_remote_config/src/data/config_data.dart';
 
 /// Provides an abstract contract for accessing and storing remote configuration data locally.
 ///

@@ -1,6 +1,6 @@
-# BlendBerry Flutter SDK - Example App
+# Flutter Remote Config - Example App
 
-This example demonstrates how to integrate the BlendBerry Flutter SDK with a Django REST API backend.
+This example demonstrates how to integrate Flutter Remote Config with a Django REST API backend.
 
 ## Django Backend Setup
 

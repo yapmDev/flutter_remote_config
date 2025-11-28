@@ -1,8 +1,8 @@
-import 'package:blendberry_flutter_sdk/src/data/repository.dart';
-import 'package:blendberry_flutter_sdk/src/domain/service.dart';
-import 'package:blendberry_flutter_sdk/src/domain/sync_strategy.dart';
-import 'package:blendberry_flutter_sdk/src/presentation/mediator.dart';
-import 'package:blendberry_flutter_sdk/src/util/logger.dart';
+import 'package:flutter_remote_config/src/data/repository.dart';
+import 'package:flutter_remote_config/src/domain/service.dart';
+import 'package:flutter_remote_config/src/domain/sync_strategy.dart';
+import 'package:flutter_remote_config/src/presentation/mediator.dart';
+import 'package:flutter_remote_config/src/util/logger.dart';
 
 /// Builder for creating and configuring [RemoteConfigMediator] instances.
 ///

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:blendberry_flutter_sdk/blendberry_flutter_sdk.dart';
+import 'package:flutter_remote_config/flutter_remote_config.dart';
 import 'services/example_config_service.dart';
 import 'repositories/example_local_repository.dart';
 import 'domain/app_config.dart';
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BlendBerry Flutter SDK Example',
+      title: 'Flutter Remote Config Example',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -120,10 +120,10 @@ class _ConfigExamplePageState extends State<ConfigExamplePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('BlendBerry SDK Example'),
-      ),
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: const Text('Flutter Remote Config Example'),
+        ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

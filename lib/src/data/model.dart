@@ -1,5 +1,5 @@
-import 'package:blendberry_flutter_sdk/src/data/config_data.dart';
-import 'package:blendberry_flutter_sdk/src/data/serializable.dart';
+import 'package:flutter_remote_config/src/data/config_data.dart';
+import 'package:flutter_remote_config/src/data/serializable.dart';
 import 'package:meta/meta.dart';
 
 /// Represents a remote configuration model fetched from or persisted to

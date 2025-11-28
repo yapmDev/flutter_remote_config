@@ -1,6 +1,6 @@
 # Architecture Documentation
 
-This document explains the architecture and design decisions of the BlendBerry Flutter SDK.
+This document explains the architecture and design decisions of Flutter Remote Config.
 
 ---
 

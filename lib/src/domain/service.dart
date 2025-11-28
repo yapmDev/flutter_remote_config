@@ -1,5 +1,5 @@
-import 'package:blendberry_flutter_sdk/src/data/config_data.dart';
-import 'package:blendberry_flutter_sdk/src/domain/sync_strategy.dart';
+import 'package:flutter_remote_config/src/data/config_data.dart';
+import 'package:flutter_remote_config/src/domain/sync_strategy.dart';
 
 /// Completely abstract service for fetching remote configurations.
 ///

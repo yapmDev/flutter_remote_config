@@ -1,11 +1,11 @@
-import 'package:blendberry_flutter_sdk/src/data/repository.dart';
-import 'package:blendberry_flutter_sdk/src/domain/entity.dart';
-import 'package:blendberry_flutter_sdk/src/domain/exceptions.dart';
-import 'package:blendberry_flutter_sdk/src/domain/mapper.dart';
-import 'package:blendberry_flutter_sdk/src/domain/service.dart';
-import 'package:blendberry_flutter_sdk/src/domain/sync_strategy.dart';
-import 'package:blendberry_flutter_sdk/src/presentation/dispatcher.dart';
-import 'package:blendberry_flutter_sdk/src/util/logger.dart';
+import 'package:flutter_remote_config/src/data/repository.dart';
+import 'package:flutter_remote_config/src/domain/entity.dart';
+import 'package:flutter_remote_config/src/domain/exceptions.dart';
+import 'package:flutter_remote_config/src/domain/mapper.dart';
+import 'package:flutter_remote_config/src/domain/service.dart';
+import 'package:flutter_remote_config/src/domain/sync_strategy.dart';
+import 'package:flutter_remote_config/src/presentation/dispatcher.dart';
+import 'package:flutter_remote_config/src/util/logger.dart';
 
 /// Load mode for configuration fetching.
 ///

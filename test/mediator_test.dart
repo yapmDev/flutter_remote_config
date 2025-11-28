@@ -1,4 +1,4 @@
-import 'package:blendberry_flutter_sdk/blendberry_flutter_sdk.dart';
+import 'package:flutter_remote_config/flutter_remote_config.dart';
 import 'package:test/test.dart';
 import 'mocks/mock_config_data.dart';
 import 'mocks/mock_mapper.dart';

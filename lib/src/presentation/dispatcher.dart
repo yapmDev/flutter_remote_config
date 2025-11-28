@@ -1,5 +1,5 @@
-import 'package:blendberry_flutter_sdk/src/domain/entity.dart';
-import 'package:blendberry_flutter_sdk/src/domain/mapper.dart';
+import 'package:flutter_remote_config/src/domain/entity.dart';
+import 'package:flutter_remote_config/src/domain/mapper.dart';
 
 /// Defines a contract for delivering runtime-ready remote configuration objects.
 ///

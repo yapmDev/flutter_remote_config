@@ -1,4 +1,4 @@
-import 'package:blendberry_flutter_sdk/blendberry_flutter_sdk.dart';
+import 'package:flutter_remote_config/flutter_remote_config.dart';
 import 'app_config.dart';
 
 /// Mapper that converts raw configuration data into AppConfig domain entity.

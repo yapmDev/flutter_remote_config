@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:blendberry_flutter_sdk/blendberry_flutter_sdk.dart';
+import 'package:flutter_remote_config/flutter_remote_config.dart';
 import 'package:http/http.dart' as http;
 import '../models/example_config_data.dart';
 import '../models/example_config_metadata.dart';

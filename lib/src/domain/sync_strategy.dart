@@ -1,5 +1,5 @@
-import 'package:blendberry_flutter_sdk/src/data/config_data.dart';
-import 'package:blendberry_flutter_sdk/src/domain/service.dart';
+import 'package:flutter_remote_config/src/data/config_data.dart';
+import 'package:flutter_remote_config/src/domain/service.dart';
 
 /// Result of a sync check operation.
 ///
