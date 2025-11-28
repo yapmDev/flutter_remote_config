@@ -1,6 +1,8 @@
 name: example
-description: "Example app to test integration with blendberry_flutter_sdk"
+description: Example app for blendberry_flutter_sdk
 publish_to: 'none'
+
+version: 1.0.0+1
 
 environment:
   sdk: ^3.6.1
@@ -8,20 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  meta: ^1.9.1
-  http: ^1.3.0
-  shared_preferences: ^2.0.17
-
   blendberry_flutter_sdk:
     path: ../
 
 dev_dependencies:
-
   flutter_test:
     sdk: flutter
-
-  flutter_lints: ^5.0.0
+  lints: ^5.0.0  
 
 flutter:
   uses-material-design: true

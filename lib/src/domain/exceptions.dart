@@ -49,7 +49,7 @@ class ConfigNotFoundException extends RemoteConfigException {
 /// - Sync strategy encounters an error
 class ConfigSyncException extends RemoteConfigException {
   /// Creates a [ConfigSyncException] with the given [message] and optional [cause].
-  ConfigSyncException(String message, [Object? cause]) : super(message, cause);
+  ConfigSyncException(super.message, [super.cause]);
 }
 
 /// Exception thrown when configuration data is invalid or malformed.
@@ -60,6 +60,6 @@ class ConfigSyncException extends RemoteConfigException {
 /// - Data format doesn't match expected structure
 class ConfigDataException extends RemoteConfigException {
   /// Creates a [ConfigDataException] with the given [message] and optional [cause].
-  ConfigDataException(String message, [Object? cause]) : super(message, cause);
+  ConfigDataException(super.message, [super.cause]);
 }
 
